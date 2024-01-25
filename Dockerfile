@@ -1,12 +1,8 @@
-FROM python:3.8
+# Container image that runs your code
+FROM alpine:3.10
 
-WORKDIR /app
+# Copies your code file from your action repository to the filesystem path `/` of the container
+COPY entrypoint.sh /entrypoint.sh
 
-COPY . /app
-
-RUN pip install pytest
-RUN pip install pytest-md-report
-RUN pip install pytest-cov
-RUN pip install pytest-github-report
-
-CMD ["pytest", "--github-report", "--md-report", "--cov=.", "test_sample.py"]
+# Code file to execute when the docker container starts up (`entrypoint.sh`)
+ENTRYPOINT ["/entrypoint.sh"]
