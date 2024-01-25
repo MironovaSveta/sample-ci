@@ -4,3 +4,6 @@
 2. create .github/workflows/main.yml
 3. push to Github
 4. navigate to the "Actions"
+5. make changes
+   git status
+   git add ....
