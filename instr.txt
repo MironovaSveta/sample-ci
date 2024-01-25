@@ -1,0 +1,6 @@
+1. check locally:
+   docker build -t my-python-app .
+   docker run my-python-app
+2. create .github/workflows/main.yml
+3. push to Github
+4. navigate to the "Actions"
