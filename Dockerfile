@@ -7,5 +7,6 @@ COPY . /app
 RUN pip install pytest
 RUN pip install pytest-md-report
 RUN pip install pytest-cov
+RUN pytest-github-report
 
-CMD ["pytest", "--md-report", "--cov=.", "test_sample.py"]
+CMD ["pytest", "--github-report", "--md-report", "--cov=.", "test_sample.py"]
