@@ -22,3 +22,5 @@
    git commit -m "My first action is ready"
    git tag -a -m "My first action release" v1
    git push --follow-tags
+8. .github/workflows/main.yml
+   but insert my repo and action names
